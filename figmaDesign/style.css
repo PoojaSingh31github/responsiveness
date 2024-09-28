@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list{
+     display: flex;
+}
+.list button{
+    padding: 5px 10px;
+    color: #ED0331; 
+    background-color: #fff;
+    border: 1px solid #ED0331;
+    border-radius: 5px;
+}
