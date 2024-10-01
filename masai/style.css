@@ -45,28 +45,287 @@ nav {
   text-transform: uppercase;
   background: #fff;
 }
-.slideDown{
-    display: none;
-    
+.slideDown {
+  display: none !important;
+  display: block;
+  z-index: 9;
 }
 
 .loginButtonOuter {
   display: none;
 }
 
-
-.section1Main{
-    text-align: center;
-    padding: 0 12rem;
+.section1Main {
+  text-align: center;
+  padding: 0 12rem;
 }
-.mainHeading{
-    margin-top: 8rem;
-    font-size: 48px;
-    margin-bottom: 1rem;
+.mainHeading {
+  margin-top: 8rem;
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+.section3mainHeading {
+  margin-top: 8rem;
+  font-size: 34px;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 .section1Main p {
-    font-size: 22px;
-    color: #21191B;
+  font-size: 22px;
+  color: #21191b;
+}
+
+/* Section 2  */
+
+.section2 {
+  margin: 5rem 0 5rem 5rem;
+}
+
+.section2Main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+.sec2gridLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec2gridLeftUl {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.sec2gridLeftUl li {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.sec2gridLeft h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.sec2gridRight {
+  display: flex;
+  justify-content: center;
+}
+/* form style  */
+
+.formContainer {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.formContainer h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #21191b;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.checkboxContainer input {
+  margin-right: 10px;
+  margin-top: -0.5rem;
+  cursor: pointer;
+  width: 20px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #ed0331;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+form button:hover {
+  background-color: #830720;
+}
+
+/* Section 3 Styling  */
+
+.accordianContainer {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.options {
+  position: relative;
+}
+
+.options ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.options ul li {
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.options p {
+  border: 1px solid #ed0331;
+  width: 30.33%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.sliderItems {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.option-content {
+  width: 100%;
+  text-align: center;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  text-wrap: balance;
+}
+
+.opt {
+  flex: 1 1 100px;
+  margin: 20px 5px;
+  font-size: 14px;
+  color: #6e71cc;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.sliderVisibility {
+  display: flex !important;
+}
+
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  font-weight: 700;
+  border: none;
+  text-align: left;
+  text-transform: uppercase;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.accordion i {
+  position: absolute;
+  right: 20px;
+  color: #ed0331;
+  top: 18px;
+  transform: rotate(90deg);
+  transition: transform 0.4s;
+}
+
+.active i {
+  transform: rotate(270deg);
+}
+
+.accordianMobile {
+  display: none;
+}
+
+/* Section 4  */
+
+.whyFromGrid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 3rem 5rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.applyButton {
+  width: 239px;
+  padding: 12px 16px;
+  background-color: #ed0331;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+.applyButton:hover {
+  scale: 1.1;
 }
 
 @media (max-width: 480px) {
@@ -96,7 +355,7 @@ nav {
     background: #fff;
   }
 
-  .slideDown{
+  .slideDown {
     display: none;
     margin-top: 20px;
     padding-left: 40px;
@@ -106,24 +365,55 @@ nav {
     height: 100vh;
     background: #fff;
   }
-  
 
   .slideDown ul {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     flex-direction: column;
     gap: 30px;
     margin-top: 20px;
     list-style: none;
     align-items: flex-start;
-    
   }
-  
+
   .slideDown ul li a {
     text-decoration: none;
     color: #000;
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
+  }
+
+  .section1Main {
+    padding: 0;
+  }
+
+  /* section 2  */
+
+  .section2 {
+    margin: 5rem 1rem 1rem 1rem;
+  }
+  .section2Main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 100px;
+  }
+
+  /* section 3  */
+
+  .accordianContainer {
+    display: none;
+  }
+
+  .accordianMobile {
+    display: block;
+    margin: 3rem 0;
+  }
+
+  /* Section 4  */
+
+  .whyFromGrid {
+    display: flex;
+    flex-direction: column;
   }
 }
